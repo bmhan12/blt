@@ -353,6 +353,7 @@ macro(HIP_GET_SOURCES_AND_OPTIONS _sources _cmake_options _hipcc_options _hcc_op
                 "x${arg}" STREQUAL "xEXCLUDE_FROM_ALL" OR
                 "x${arg}" STREQUAL "xSTATIC" OR
                 "x${arg}" STREQUAL "xSHARED" OR
+                "x${arg}" STREQUAL "xOBJECT" OR
                 "x${arg}" STREQUAL "xMODULE"
                 )
             list(APPEND ${_cmake_options} ${arg})
