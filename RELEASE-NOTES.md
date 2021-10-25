@@ -18,6 +18,9 @@ The project release numbers follow [Semantic Versioning](http://semver.org/spec/
 - Fold `BLT_CLANG_HIP_ARCH` into the `CMAKE_HIP_ARCHITECTURES` variable
 - When using `ENABLE_ALL_WARNINGS`, append the flag to the beginning of `CMAKE_{C,CXX}_FLAGS` instead of the end
 
+### Fixed
+- `OBJECT` argument no longer treated as a source file when using `blt_add_library` with HIP.
+
 ## [Version 0.4.1] - Release date 2021-07-20
 
 ### Added
